@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="382dp"
+            android:layout_height="107dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/carnet" />
+
+        <TextView
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Nombre:"
+            android:layout_below="@id/foto"
+            />
+
+
+        <EditText
+            android:id="@+id/txt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nom"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:hint="Ingrese su nombre"
+            android:inputType="text|textPersonName"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/clave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Clave:"
+            android:layout_below="@id/txt_nombre"/>
+
+        <EditText
+            android:id="@+id/txt_clave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clave"
+            android:hint="Digite su clave (min 5 caracteres)"
+            android:inputType="text|textPassword"
+            android:padding="16dp"
+
+            />
+        <TextView
+            android:id="@+id/rep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Repetir Clave:"
+            android:layout_below="@id/txt_clave"/>
+
+        <EditText
+            android:id="@+id/txt_clave2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rep"
+            android:hint="Debe ser la misma clave"
+            android:inputType="text|textPassword" />
+
+        <TextView
+            android:id="@+id/gmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_clave2"
+            android:text="\u0009 Ingrese su GMAIL:" />
+
+        <EditText
+            android:id="@+id/txt_gma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gmail"
+            android:hint="Ingrese gmail del usuario"
+            android:inputType="text|textEmailAddress"
+            android:padding="16dp" />
+        <TextView
+            android:id="@+id/gmail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_gma"
+            android:text="\u0009 Repita su GMAIL:" />
+
+        <EditText
+            android:id="@+id/txt_gma2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gmail2"
+            android:hint="Repita el gmail del usuario"
+            android:inputType="text|textEmailAddress"
+
+            android:padding="16dp" />
+        <TextView
+            android:id="@+id/rol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_gma2"
+            android:text="\u0009 Ingrese su rol:" />
+
+        <EditText
+            android:id="@+id/txt_rol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rol"
+            android:hint="ADMIN O INVITADO"
+            android:inputType="text|textPersonName"
+            android:maxLength="10"
+            android:padding="16dp" />
+
+
+        <Button
+            android:id="@+id/btn_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_rol"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Registrar" />
+
+        <TextView
+            android:id="@+id/txt_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_registrar"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="20sp"
+            android:gravity="center"
+            android:textColor="@color/purple_500" />
+
+
+
+    </RelativeLayout>
+</layout>
